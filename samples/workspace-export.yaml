@@ -1,0 +1,9 @@
+---
+apiVersion: apis.kcp.io/v1alpha1
+kind: APIExport
+metadata:
+  name: workspaces.org1.orvis.io
+spec:
+  permissionClaims:
+    - all: true
+      resource: namespaces

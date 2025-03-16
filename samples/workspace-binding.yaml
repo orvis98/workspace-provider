@@ -1,0 +1,14 @@
+---
+apiVersion: apis.kcp.io/v1alpha1
+kind: APIBinding
+metadata:
+  name: workspaces.org1.orvis.io
+spec:
+  reference:
+    export:
+      name: workspaces.org1.orvis.io
+      path: root:org1
+  permissionClaims:
+    - all: true
+      resource: namespaces
+      state: Accepted
